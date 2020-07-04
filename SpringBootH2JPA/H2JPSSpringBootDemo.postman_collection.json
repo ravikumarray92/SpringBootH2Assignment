@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "1eaef106-adc4-4e4b-80e5-14290bba6edb",
+		"name": "H2JPSSpringBootDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/cart/controller/updateProducts",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\t\"cartID\": \"800\",\r\n\t\"customerID\": \"999\",\r\n\t\"updateProductDetails\": {\r\n\t\t\"productDetailsMap\": {\r\n\t\t\t\"AXP\": 5,\r\n\t\t\t\"RMP\": 8,\r\n\t\t\t\"ZPQ\": 4,\r\n\t\t\t\"OMN\": 2,\r\n\t\t\t\"LMP\": 1\r\n\t\t}\r\n\t}\r\n\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cart/controller/updateProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cart",
+						"controller",
+						"updateProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/cart/controller/removeProducts/1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n\r\n\t\r\n\t\t\t\"productId\":\"AXP\",\r\n\t\t\t\"productName\": \"Soap\"\r\n\r\n\r\n\r\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cart/controller/removeProducts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cart",
+						"controller",
+						"removeProducts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/cart/controller/addProducts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\t\"cartID\": \"800\",\r\n\t\"customerID\": \"999\",\r\n\t\"addProductDetails\": {\r\n\t\t\"productDetailsMap\": {\r\n\t\t\t\"AXP\": 5,\r\n\t\t\t\"RMP\": 8,\r\n\t\t\t\"ZPQ\": 4,\r\n\t\t\t\"OMN\": 2,\r\n\t\t\t\"LMP\": 1\r\n\t\t}\r\n\t}\r\n\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cart/controller/addProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cart",
+						"controller",
+						"addProducts"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

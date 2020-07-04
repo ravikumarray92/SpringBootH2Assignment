@@ -1,0 +1,34 @@
+DROP TABLE IF EXISTS Shopping_Carts;
+CREATE TABLE Shopping_Carts
+(
+   CARTID VARCHAR (250) NOT NULL,
+   CUSTOMERID VARCHAR (250) NOT NULL,
+   PRODUCTID VARCHAR (250) NOT NULL,
+   QUANTITY INT NOT NULL,
+   PRIMARY KEY
+   (
+      CARTID,
+      PRODUCTID
+   )
+);
+INSERT INTO Shopping_Carts
+(
+   CARTID,
+   CUSTOMERID,
+   PRODUCTID,
+   QUANTITY
+)
+VALUES
+(
+   '1',
+   '100',
+   'AXP',
+   5
+),
+
+(
+   '1',
+   '200',
+   'RMP',
+   5
+);
