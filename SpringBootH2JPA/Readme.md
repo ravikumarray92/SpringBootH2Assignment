@@ -12,3 +12,14 @@
 
 JVM Compatibility : Java 8
 Requirements : Maven and, JDK 8
+
+
+##Local H2 Database Console URL :
+http://localhost:8080/h2-console/login.jsp
+
+Driver Class: org.h2.Driver
+JDBC URL: jdbc:h2:mem:testdb
+User Name: ravi
+Password: ravileo
+
+Table Name : SHOPPING_CARTS 
