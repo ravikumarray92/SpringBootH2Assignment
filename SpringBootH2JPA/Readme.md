@@ -18,8 +18,11 @@ Requirements : Maven and, JDK 8
 http://localhost:8080/h2-console/login.jsp
 
 Driver Class: org.h2.Driver
+
 JDBC URL: jdbc:h2:mem:testdb
+
 User Name: ravi
+
 Password: ravileo
 
 Table Name : SHOPPING_CARTS 
