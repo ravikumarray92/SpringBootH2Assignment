@@ -44,7 +44,7 @@ public class CartControllers {
 	}
 
 	@RequestMapping(value = "/removeProducts/{cartID}", method = RequestMethod.POST)
-	ResponseBodyTemplate updateProducts(@RequestBody List<Products> productList,
+	ResponseBodyTemplate removeProducts(@RequestBody List<Products> productList,
 			@PathVariable("cartID") String cartID) {
 
 		List<Products> result = processCart.deleteProducts(cartID, productList);
